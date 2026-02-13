@@ -14,7 +14,7 @@ public class Worker : BackgroundService
     public Worker(ILogger<Worker> logger)
     {
         _logger = logger;
-        _httpClient = new HttpClient { BaseAddress = new Uri("http://localhost:5000") };
+        _httpClient = new HttpClient { BaseAddress = new Uri("https://nexusapi-nl6j.onrender.com") };
         _firebirdService = new FirebirdService(@"C:\Intelitech\DRHS\servidor\dados\DRHS_FB25.FDB");
     }
 
