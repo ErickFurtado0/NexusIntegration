@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Api\\Nexus.Api.csproj": {}
+    "C:\\HortsWorks\\NexusIntegration\\Nexus.Api\\Nexus.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Api\\Nexus.Api.csproj": {
+    "C:\\HortsWorks\\NexusIntegration\\Nexus.Api\\Nexus.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Api\\Nexus.Api.csproj",
+        "projectUniqueName": "C:\\HortsWorks\\NexusIntegration\\Nexus.Api\\Nexus.Api.csproj",
         "projectName": "Nexus.Api",
-        "projectPath": "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Api\\Nexus.Api.csproj",
+        "projectPath": "C:\\HortsWorks\\NexusIntegration\\Nexus.Api\\Nexus.Api.csproj",
         "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Api\\obj\\",
+        "outputPath": "C:\\HortsWorks\\NexusIntegration\\Nexus.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\conta\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj": {
-                "projectPath": "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj"
+              "C:\\HortsWorks\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj": {
+                "projectPath": "C:\\HortsWorks\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj"
               }
             }
           }
@@ -40,7 +40,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.200"
       },
@@ -74,10 +74,6 @@
               "version": "[8.0.14, 8.0.14]"
             },
             {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.202, 9.0.202]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[8.0.14, 8.0.14]"
             },
@@ -99,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj": {
+    "C:\\HortsWorks\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj",
+        "projectUniqueName": "C:\\HortsWorks\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj",
         "projectName": "Nexus.Domain",
-        "projectPath": "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj",
+        "projectPath": "C:\\HortsWorks\\NexusIntegration\\Nexus.Domain\\Nexus.Domain.csproj",
         "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\conta\\RiderProjects\\NexusIntegration\\Nexus.Domain\\obj\\",
+        "outputPath": "C:\\HortsWorks\\NexusIntegration\\Nexus.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\conta\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -131,7 +127,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.200"
       },
@@ -153,10 +149,6 @@
             {
               "name": "Microsoft.AspNetCore.App.Ref",
               "version": "[8.0.14, 8.0.14]"
-            },
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.202, 9.0.202]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
