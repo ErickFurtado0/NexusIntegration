@@ -1,0 +1,15 @@
+[14:42:28] [INICIO] Recebida requisição de sync com 1 produtos.
+[14:42:29] [ERRO] Falha ao sincronizar produto PROD-SWAGGER-01: Shopify recusou com erro Unauthorized: {"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}
+[14:42:29] [FIM] Sincronização concluída. Sucesso: 0 | Erros: 1
+[14:43:12] [INICIO] Recebida requisição de sync com 1 produtos.
+[14:43:13] [ERRO] Falha ao sincronizar produto PROD-SWAGGER-01: Shopify recusou com erro Unauthorized: {"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}
+[14:43:13] [FIM] Sincronização concluída. Sucesso: 0 | Erros: 1
+[14:44:06] [INICIO] Recebida requisição de sync com 1 produtos.
+[14:44:06] [ERRO] Falha ao sincronizar produto PROD-SWAGGER-01: Shopify recusou com erro Unauthorized: {"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}
+[14:44:06] [FIM] Sincronização concluída. Sucesso: 0 | Erros: 1
+[14:44:29] [INICIO] Recebida requisição de sync com 1 produtos.
+[14:44:30] [ERRO] Falha ao sincronizar produto PROD-SWAGGER-01: Shopify recusou com erro Unauthorized: {"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}
+[14:44:30] [FIM] Sincronização concluída. Sucesso: 0 | Erros: 1
+[15:58:46] [INICIO] Recebida requisição de sync com 1 produtos.
+[15:58:48] [SUCESSO] Produto PROD-SWAGGER-01 sincronizado na Shopify.
+[15:58:48] [FIM] Sincronização concluída. Sucesso: 1 | Erros: 0

@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using DotNetEnv;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Nexus.Api.Data;
 using Nexus.Api.Services;
-using Nexus.Domain.Interfaces;
 using Nexus.Domain.Models;
+
+Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,10 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("NexusDb"));
-builder.Services.AddSingleton<IOrderRepository, InMemoryOrderRepository>();
-
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
+builder.Services.AddHttpClient<ShopifyService>();
 
 var app = builder.Build();
 
@@ -29,18 +28,12 @@ using (var scope = app.Services.CreateScope())
         db.Tenants.Add(new Tenant
         {
             Id = Guid.NewGuid(),
-            Name = "Intelitech Firebird",
-            ApiKey = "INTELITECH-SECRET-123", 
-            Type = IntegrationType.FirebirdAgent,
-            ConnectionConfig = @"C:\Intelitech\DRHS\servidor\dados\DRHS_FB25.FDB"
-        });
-        db.Tenants.Add(new Tenant
-        {
-            Id = Guid.NewGuid(),
-            Name = "Villeneuve TOTVS",
-            ApiKey = "VILLENEUVE-SECRET-456",
-            Type = IntegrationType.TotvsRemote,
-            ConnectionConfig = "-h www30.bhan.com.br -u villeneuve -p f6r5PE9E -c 01"
+            Name = "Cliente Firebird Principal",
+            ApiKey = Environment.GetEnvironmentVariable("NEXUS_API_KEY") ?? "ERRO_SEM_CHAVE", 
+            ConnectionConfig = Environment.GetEnvironmentVariable("FIREBIRD_DB_PATH") ?? "",
+            ShopifyStoreUrl = Environment.GetEnvironmentVariable("SHOPIFY_STORE_URL") ?? "",
+            ShopifyClientId = Environment.GetEnvironmentVariable("SHOPIFY_CLIENT_ID") ?? "",
+            ShopifyClientSecret = Environment.GetEnvironmentVariable("SHOPIFY_CLIENT_SECRET") ?? ""
         });
         db.SaveChanges();
     }
@@ -50,13 +43,14 @@ app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Nexus API v1");
-    c.RoutePrefix = "swagger"; 
+    c.RoutePrefix = "swagger";
 });
 
 app.UseAuthorization();
 app.MapControllers();
+app.MapGet("/", () => "Nexus API Operational.");
 
-app.MapGet("/", () => "Nexus API está rodando! Acesse /swagger para ver a documentação.");
+app.Run("http://localhost:5000");
 
 var logger = app.Services.GetRequiredService<ILogger<Program>>();
 app.Lifetime.ApplicationStarted.Register(() => 
@@ -65,5 +59,3 @@ app.Lifetime.ApplicationStarted.Register(() =>
     logger.LogInformation("🔗 Swagger: /swagger");
     logger.LogInformation("🔗 Home: /");
 });
-
-app.Run();

@@ -9,3 +9,15 @@ C:\Users\conta\RiderProjects\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\Nexu
 C:\Users\conta\RiderProjects\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\refint\Nexus.Domain.dll
 C:\Users\conta\RiderProjects\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\Nexus.Domain.pdb
 C:\Users\conta\RiderProjects\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\ref\Nexus.Domain.dll
+C:\HortsWorks\NexusIntegration\Nexus.Domain\bin\Debug\net8.0\Nexus.Domain.deps.json
+C:\HortsWorks\NexusIntegration\Nexus.Domain\bin\Debug\net8.0\Nexus.Domain.dll
+C:\HortsWorks\NexusIntegration\Nexus.Domain\bin\Debug\net8.0\Nexus.Domain.pdb
+C:\HortsWorks\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\Nexus.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\HortsWorks\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\Nexus.Domain.AssemblyInfoInputs.cache
+C:\HortsWorks\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\Nexus.Domain.AssemblyInfo.cs
+C:\HortsWorks\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\Nexus.Domain.csproj.CoreCompileInputs.cache
+C:\HortsWorks\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\Nexus.Domain.sourcelink.json
+C:\HortsWorks\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\Nexus.Domain.dll
+C:\HortsWorks\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\refint\Nexus.Domain.dll
+C:\HortsWorks\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\Nexus.Domain.pdb
+C:\HortsWorks\NexusIntegration\Nexus.Domain\obj\Debug\net8.0\ref\Nexus.Domain.dll
